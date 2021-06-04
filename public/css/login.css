@@ -1,0 +1,55 @@
+.formulario__field {
+width: 100vw;
+display: flex;
+flex-direction: column;
+padding: 18px;
+padding: 25px;
+border: none;
+}
+
+.formulario__field * {
+border: none;
+
+}
+.formulario__field input {
+margin-top: 18px;
+padding: 10px 10px;
+}
+
+.formulario__field button {
+margin: auto;
+background-color: #155192;
+width: 60vw; 
+padding: 10px 10px;
+color: white;
+font-weight: 200;
+margin-top: 30px;
+border: initial;
+/*border-radius: 5%;*/
+margin-bottom: 20px;
+}
+
+.botonEnviar{
+transition: all 0.5s;
+
+}
+
+.botonEnviar:hover {
+background-color: #3483fa;
+}
+
+@media (min-width: 499px) {
+.formulario__field {
+max-width: 70vw;
+margin: auto;
+border: none;
+}
+
+@media (min-width: 900px) {
+.formulario__field {
+max-width: 60vw;
+margin: auto;
+border: none;
+}  }
+
+};  

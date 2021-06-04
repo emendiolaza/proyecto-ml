@@ -1,0 +1,423 @@
+*  {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body {
+font-family: 'Roboto', sans-serif;
+
+}
+
+/* ----------------- HEADER -------------- */
+
+.main__header {
+background-color: #EAC926;
+padding: 5px;
+width: 100vw;
+/* position: fixed;
+z-index: 10; */
+}
+
+
+.main__header__top-bar {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 20px;
+
+
+}
+
+.cuotas {
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+margin: 20px auto 20px auto;
+
+}
+
+#logo {
+width: 50%;
+}
+
+
+
+#barraBusqueda {
+max-width: 50%;
+display: flex;
+margin-left: 8px;
+
+}
+
+
+.main__header__navbar {
+display: none;
+}
+
+.main__header__navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+
+.main__header__navbar a {
+text-decoration: none;
+color: #222222;
+display: inline-block;
+padding: 5px 0;
+font-size: 12px;
+}
+
+.hamburguer-button {
+background-color: #03264C;
+display: block;
+max-width: 50px;
+padding: 15px 0;
+border-radius: 8px;
+text-align: center;
+margin: auto;
+
+}
+
+.fa-bars {
+background-color: #ebebeb; 
+background-size: cover; 
+}
+
+
+/* ------------------ MAIN ------------------ */
+
+main {
+margin: auto;
+background-color: #ebebeb;
+padding-bottom: 10px;
+}
+
+.main__banner {
+width: 100vw;
+max-width: 100vw;
+}
+
+p {
+font-size: 12px;
+}
+
+h3 {
+font-size: 20px;
+color: #666;;
+text-align: center;
+font-weight: 300;
+}
+
+h3 a {
+font-size: 16px;
+font-weight: 200;
+color: blue;
+margin-left: 8px;
+}
+
+.articulos {
+margin: 10px;
+background-color: white;
+position: relative;
+transition: all 450ms
+}
+
+.detalleArticulos {
+border-top: solid 1px #292525;
+padding: 15px;
+}
+
+.descripciones {  
+font-size: 15px;
+display: none;
+}
+
+
+.imagenArticulo {
+width: 60vw;
+margin: auto;
+}
+
+/* NECESITAMOS CENTRAR IMAGEN UNICAMENTE EN MOBILE */
+@media (max-width: 500px) {
+
+.imagenArticulo {
+position: relative;
+left: 15vw;
+} 
+}
+
+.precio {
+font-size: 16px;
+font-weight: bold;
+}
+
+.descuentos {
+font-size: 15px;
+font-weight: bold;
+color: #39b54a; 
+}
+
+
+
+
+
+.fa-truck {
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+color: green; 
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15p 
+} 
+
+
+.main__section__lastvisit {
+display: flex;
+flex-direction: column;
+}
+
+
+/* --------------- FOOTER ------------------ */
+
+footer {
+max-width: 100%;
+background-color: white;
+width: 100vw;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.footer__section {
+padding: 20px;
+}
+
+.footer__section h4 {
+color: #666;
+text-align: center;
+}
+
+.footer__section p, .footer__Copyright {
+text-align: center;
+margin-top: 5px;
+}
+
+/* Iconos footer */
+.fa-handshake, .fa-gift, .fa-credit-card  {
+color:#03264C;
+margin-left: 45%;
+margin-bottom: 10px;
+font-size: 2em;
+}
+
+
+
+/* --------------- TABLETS --------------- */
+
+
+@media (min-width: 500px) {
+.descripciones {
+display: block;
+}
+
+.detalleArticulos {
+display: none;
+}
+
+.imagenArticulo:hover + .detalleArticulos {
+display: block;
+opacity: 1;
+background-color: rgba(39, 99, 69, 0.2);
+width: 45vw;
+}
+
+.imagenArticulo:hover {
+box-shadow: 0 0 16px 0px rgba(20, 20, 20, .8);
+width: 45vw;
+}
+
+@keyframes aumentarLogo {
+0% {
+transform: scale(1);
+}
+100% {
+transform: scale(3.5);
+}   
+}
+
+
+.main__header__top-bar {
+display: contents;
+}
+
+#barraBusqueda {
+width: 30vw
+}
+
+#barra {
+width: 30vw;
+}
+
+.cuotas {
+width: 30vw;
+}
+
+.main__header__section {
+display: flex;
+justify-content: space-around;
+align-self: center;
+padding: 15px;
+}
+
+.main__header__navbar {
+display: flex;
+justify-content: space-between
+}
+
+.main__header__navbar ul {
+display: flex;
+margin: 0px 30px;
+}
+
+.main__header__navbar li {
+margin: 5px;
+}
+
+.right-navbar {
+justify-content: flex-end;
+
+}
+
+.left-navbar {
+justify-content: flex-start;
+}
+
+.hamburguer-button {
+display: none; 
+}
+
+.main__section__lastvisit, .main__section__ofertas {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.articulos *{
+width: 40vw;
+}
+
+.detalleArticulos {
+width: 40vw;
+}
+
+.fa-truck {
+max-width: 3vw;
+}
+
+}
+
+/* --------------------- DESKTOP  --------------------- */
+
+@media (min-width: 769px) {
+.main__header__section {
+max-width: 80vw;
+margin: auto;
+}
+
+.imagenArticulo:hover + .detalleArticulos {
+display: block;
+opacity: 1;
+background-color: rgba(39, 99, 69, 0.2);
+width: 25vw;
+}
+
+.imagenArticulo:hover {
+box-shadow: 0 0 16px 0px rgba(20, 20, 20, .8);
+width: 25vw;
+}
+
+.main__header__navbar {
+max-width: 80vw;
+margin: auto;
+}
+.cuotas {
+max-width: 350px;
+text-align: right;
+}
+
+.footer__main__section {
+display: flex;
+margin: 30px;
+}
+
+/* PARA CAMBIAR DE COLOR EN LOS ICONOS*/
+.fa-handshake:hover, .fa-gift:hover, .fa-credit-card:hover   {
+color: #39b54a;
+
+}
+.main__section__lastvisit, .main__section__ofertas {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.articulos *{
+width: 20vw;
+}
+
+.detalleArticulos {
+width: 20vw;
+}
+.fa-truck {
+max-width: 3vw;
+}
+
+
+}
+
+/* --------------- GREAT VIEWS ------------------- */
+
+
+@media (min-width: 1200px) {
+.navbar, .main-header-top-bar {
+max-width: 1200px; 
+align-items: center;
+}
+
+#logo {
+width: 290px;
+}
+
+.cuotas {
+max-width: none;
+font-size: 18px;
+font-weight: 400;
+margin: 0%;
+}
+
+.main__header__navbar {
+margin-top: 20px;
+}
+
+.main__header__navbar a {
+font-size: 20px;
+} 
+
+.fa-truck {
+max-width: 2vw;
+}
+
+}
