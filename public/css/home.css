@@ -364,7 +364,7 @@ margin: 30px;
 
 /* PARA CAMBIAR DE COLOR EN LOS ICONOS*/
 .fa-handshake:hover, .fa-gift:hover, .fa-credit-card:hover   {
-color: #39b54a;
+color: #27639b;
 
 }
 .main__section__lastvisit, .main__section__ofertas {
@@ -419,5 +419,6 @@ font-size: 20px;
 .fa-truck {
 max-width: 2vw;
 }
+
 
 }
