@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js",
-    "start": "nodemon app.js -e css,html,js,mjs,png"
+    "test": "clear && nodemon app.js -e css,html,js,mjs,png.json",
+    "start": "node app.js" 
   },
   "author": "",
   "license": "ISC",
